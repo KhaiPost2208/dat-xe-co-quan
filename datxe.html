@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt Xe Mới</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 ĐẶT XE MỚI</h1>
+    <a href="index.html" class="back-btn">← Quay về trang chủ</a>
+
+    <form id="datXeForm">
+      <div class="form-group">
+        <label>Họ và tên người đặt:</label>
+        <input type="text" id="nguoiDat" required placeholder="Ví dụ: Nguyễn Văn A">
+      </div>
+
+      <div class="form-group">
+        <label>Số điện thoại:</label>
+        <input type="tel" id="soDienThoai" required placeholder="09xxxxxxxx">
+      </div>
+
+      <div class="form-group">
+        <label>Chọn xe:</label>
+        <select id="tenXe" required>
+          <option value="">-- Đang tải danh sách xe --</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label>Ngày đi:</label>
+          <input type="date" id="ngayDi" required>
+        </div>
+        <div class="form-group">
+          <label>Giờ đi:</label>
+          <input type="time" id="gioDi" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label>Ngày về:</label>
+          <input type="date" id="ngayVe">
+        </div>
+        <div class="form-group">
+          <label>Giờ về:</label>
+          <input type="time" id="gioVe">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Điểm đi:</label>
+        <input type="text" id="diemDi" required placeholder="Ví dụ: Trụ sở cơ quan">
+      </div>
+
+      <div class="form-group">
+        <label>Điểm đến:</label>
+        <input type="text" id="diemDen" required placeholder="Ví dụ: Hà Nội">
+      </div>
+
+      <div class="form-group">
+        <label>Lý do công tác:</label>
+        <textarea id="lyDo" rows="3" required placeholder="Nhập lý do đặt xe..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Số người đi:</label>
+        <input type="number" id="soNguoi" value="1" min="1" required>
+      </div>
+
+      <button type="submit" class="submit-btn">🚀 Gửi đơn đặt xe</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
